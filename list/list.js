@@ -17,7 +17,7 @@
         // $rootScope.search = function  () {
         //     $route.updateParams({category:'search',q:$rootScope.input});
         // }
-        console.log($rootScope.input)
+        // console.log($rootScope.input)
         var count=appConfig.pageCount;
         //当前页码
         var currentPage=parseInt($routeParams.page || 1);

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Dashboard Template for Bootstrap</title>
+    <title>豆瓣电影</title>
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
@@ -29,7 +29,13 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <!--           <ul class="nav navbar-nav navbar-right">
           </ul> -->
+                    <ul class="nav navbar-nav navbar-right">
+            <li ng-class="{active:category=='in_theaters'}"><a href="#/in_theaters">正在热映</a></li>
+            <li ng-class="{active:category=='coming_soon'}"><a href="#/coming_soon">即将上映</a></li>
+            <li ng-class="{active:category=='top250'}"><a href="#/top250">TOP250</a></li>
+          </ul>
                  <search></search>
+                 
             </div>
         </div>
     </nav>
@@ -47,7 +53,8 @@
             </div>
         </div>
     </div>
-
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
     <script src="angular/angular.js"></script>
     <script src="angular/angular-route.js"></script>
     <script src="http.js"></script>
